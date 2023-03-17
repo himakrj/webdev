@@ -1,0 +1,678 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(16, 16, 15, 0.864), rgba(13, 13, 13, 0.881)), url(nature1.jpg.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+/* logo ke liye */
+.logo {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+/* images ko line me lane ke liye  */
+.col {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+.main::after {
+    clear: both;
+    display: table;
+}
+
+/*electronic gadgets text */
+.elec {
+    padding-left: 100px;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-bottom: 5px;
+    margin-left: 23px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* earbuds */
+.eb2 {
+    border-radius: 23px;
+    margin-left: 30px;
+    height: 230px;
+    width: 330px;
+}
+
+.eb4 {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 25px 100px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid blueviolet;
+    background: transparent;
+    color: rgb(224, 207, 207);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.eb5 {
+    background: blue;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.eb4:hover .eb5 {
+    width: 100%;
+}
+
+.eb4:hover {
+    border: none;
+}
+
+/* smart watch*/
+
+.wa1 {
+    padding-left: 50px;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+
+}
+
+.wa2 {
+    height: 230px;
+    width: 330px;
+    border-radius: 23px;
+    margin-bottom: 10px;
+    margin-top: -11px;
+    margin-left: 40px;
+}
+
+.wa4 {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid blueviolet;
+    background: transparent;
+    color: rgb(224, 207, 207);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-top: 16px;
+    margin-left: 125px;
+}
+
+.wa5 {
+    background: blue;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.wa4:hover .wa5 {
+    width: 100%;
+}
+
+.wa4:hover {
+    border: none;
+}
+
+/* keyboard mouse*/
+
+.km1 {
+    padding-left: 90px;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-bottom: 5px;
+    margin-left: -42px;
+    padding-bottom: 11px;
+
+}
+
+.km2 {
+    height: 230px;
+    width: 330px;
+    border-radius: 23px;
+    margin-bottom: 10px;
+    margin-left: 31px;
+    margin-top: -27px;
+}
+
+.km4 {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid blueviolet;
+    background: transparent;
+    color: rgb(224, 207, 207);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left: -10px;
+    margin-left: 110px;
+    margin-bottom: 24px;
+    margin-top: 16px;
+}
+
+.km5 {
+    background: blue;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.km4:hover .km5 {
+    width: 100%;
+}
+
+.km4:hover {
+    border: none;
+}
+
+/* pen drive */
+.pd1 {
+    padding-left: 90px;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-bottom: 5px;
+    margin-left: 21px;
+    padding-bottom: 11px;
+
+}
+
+.pd2 {
+    height: 230px;
+    width: 330px;
+    border-radius: 23px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+    margin-top: -27px;
+
+}
+
+.pd4 {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 28px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid blueviolet;
+    background: transparent;
+    color: rgb(224, 207, 207);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left: 103px;
+    margin-top: 16px;
+
+}
+
+.pd5 {
+    background: blue;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.pd4:hover .pd5 {
+    width: 100%;
+}
+
+.pd4:hover {
+    border: none;
+}
+
+/* msd */
+
+.msd2 {
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+/* rs*/
+
+.rs2 {
+    margin-bottom: 10px;
+    margin-top: -24px;
+    margin-left: 10px;
+}
+
+.bt1 {
+    padding-left: 90px;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-bottom: 5px;
+    margin-left: 21px;
+    padding-bottom: 11px;
+
+}
+
+.bt2 {
+    height: 230px;
+    width: 330px;
+    border-radius: 23px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+    margin-top: -27px;
+
+}
+
+.bt4 {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 28px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid blueviolet;
+    background: transparent;
+    color: rgb(224, 207, 207);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left: 85px;
+    margin-top: 16px;
+
+}
+
+.bt5 {
+    background: blue;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.bt4:hover .bt5 {
+    width: 100%;
+}
+
+.bt4:hover {
+    border: none;
+}
+
+/* helmet */
+.ht1 {
+    padding-left: 50px;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+
+}
+
+.ht2 {
+    height: 200px;
+    width: 200px;
+    border-radius: 23px;
+    margin-bottom: 10px;
+    margin-top: 17px;
+    margin-left: 120px;
+}
+
+.ht4 {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid blueviolet;
+    background: transparent;
+    color: rgb(224, 207, 207);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-top: 46px;
+    margin-left: 125px;
+    margin-bottom: 29px;
+}
+
+.ht5 {
+    background: blue;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.ht4:hover .ht5 {
+    width: 100%;
+}
+
+.ht4:hover {
+    border: none;
+}
+
+/* air freshner */
+
+.af1 {
+    padding-left: 50px;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+
+}
+
+.af2 {
+    height: 170px;
+    width: 157px;
+    border-radius: 23px;
+    margin-bottom: 10px;
+    margin-top: 48px;
+    margin-left: 150px;
+}
+
+.af4 {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid blueviolet;
+    background: transparent;
+    color: rgb(224, 207, 207);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-top: 45px;
+    margin-left: 125px;
+    margin-bottom: 29px;
+}
+
+.af5 {
+    background: blue;   
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.af4:hover .af5 {
+    width: 100%;
+}
+
+.af4:hover {
+    border: none;
+}
+
+/* battery */
+.ba1 {
+    padding-left: 50px;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+
+}
+
+.ba2 {
+    height: 170px;
+    width: 157px;
+    border-radius: 23px;
+    margin-bottom: 10px;
+    margin-top: 48px;
+    margin-left: 150px;
+}
+
+.ba4 {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid blueviolet;
+    background: transparent;
+    color: rgb(224, 207, 207);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-top: 45px;
+    margin-left: 125px;
+    margin-bottom: 33px;
+}
+
+.ba5 {
+    background: blue;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.ba4:hover .ba5 {
+    width: 100%;
+}
+
+.ba4:hover {
+    border: none;
+}
+
+/* dumble */
+
+.db1 {
+    padding-left: 50px;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+
+}
+
+.db2 {
+    height: 190px;
+    width: 190px;
+    border-radius: 23px;
+    margin-bottom: 10px;
+    margin-top: 48px;
+    margin-left: 65px;
+}
+
+.db4 {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid blueviolet;
+    background: transparent;
+    color: rgb(224, 207, 207);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-top: 45px;
+    margin-left: 86px;
+    margin-bottom: 33px;
+}
+
+.db5 {
+    background: blue;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.db4:hover .db5 {
+    width: 100%;
+}
+
+.db4:hover {
+    border: none;
+}
+
+/* heat pad */
+.hpa2 {
+    height: 190px;
+    width: 190px;
+    border-radius: 23px;
+    margin-bottom: 10px;
+    margin-top: 48px;
+    margin-left: 126px;
+}
+
+.hpa4 {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid blueviolet;
+    background: transparent;
+    color: rgb(224, 207, 207);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-top: 45px;
+    margin-left: 122px;
+    margin-bottom: 33px;
+}
+
+.hpa5 {
+    background: blue;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.hpa4:hover .hpa5 {
+    width: 100%;
+}
+
+.hpa4:hover {
+    border: none;
+}
+
